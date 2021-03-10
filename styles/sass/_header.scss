@@ -1,0 +1,33 @@
+header{
+    background-image: url("/assets/home/home-1.jpeg");
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.header{
+    &__wrapper{
+        max-width:2000px;
+        width:95%;
+        margin:0 auto;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        display:flex;
+        list-style: none;
+        align-items: center;
+        
+    }
+
+    &__link 
+    a{
+        text-decoration: none;
+        padding:1rem;
+    }
+}
+

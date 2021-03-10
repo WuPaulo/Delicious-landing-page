@@ -1,0 +1,24 @@
+{
+"liveSassCompile.settings.formats": [
+    {
+    "format": "expanded",
+    "extensionName": ".css",
+    "savePath": "/styles"
+    }
+],
+"liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+],
+"liveSassCompile.settings.generateMap": false,
+"liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+]
+},
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"prettier.jsxSingleQuote": true,
+"prettier.semi": true,
+"prettier.singleQuote": false,
