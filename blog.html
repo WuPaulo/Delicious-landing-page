@@ -4,47 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <title>Blog</title>
 </head>
 <body>
-    <header>
+    <header class="header__blog">
         <!--Wrapper-->
         <div class= "header__wrapper">
-            <h1>Delicious</h1>
             <!-- navigation bar -->
             <nav class="header__nav">
-                <ul>
-                    <li class="nav__link">
-                        <a href="#">Home</a>
+                <h1>DELICIOUS</h1>
+                <ul class="header__list">
+                    <li class="header__link header--highlight" >
+                        <a href="./index.html">HOME</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">About</a>
+                    <li class="header__link">
+                        <a href="#">ABOUT</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">Recipes</a>
+                    <li class="header__link">
+                        <a href="#">RECIPES</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">Nutrition</a>
+                    <li class="header__link">
+                        <a href="#">NUTRITION</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">Blog</a>
+                    <li class="header__link">
+                        <a href="./blog.html">BLOG</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">Shop</a>
+                    <li class="header__link">
+                        <a href="#">SHOP</a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#">Contact</a>
+                    <li class="header__link">
+                        <a href="./contact.html">CONTACT</a>
                     </li>
-                    <li>
-                        <a class='shopping__bag'><i class="fas fa-shopping-bag"></i></a>
+                    <li class="header__link header--bag">
+                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        <div class="header__circle">
+                            <p class="header__number">2</p>
+                        </div>
                     </li>
-                    <li>
-                        <a class="search__icon"><i class="fas fa-search"></i></a>
+                    <li class="header__link header--search">
+                        <a href="#"><i class="fas fa-search"></i></a>
                     </li>
                 </ul>
-                <button class="burger__menu"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
     </header>
+
+    <section>
+        <div class="blog">
+            <div class="blog__wrapper">
+                <div class="blog__title">
+                    <h2>PINEAPPLE CHICKEN</h2>
+                    <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+                    <div class="blog__paragraphs">
+                        <p>Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque faccilisis , magna erat dictum nibh, vel congue tortor massa vitae magna.Magna errat dictum nibh,vel congue tortor massa virae magna.</p>
+                        <p>Veggies es bonus vobis,proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                        <p>Gumbo beet grens corn soko endive gumbo gourd. Pasley shallot courgette tatsoi pea sprouts fava bean collard greens dandellion okra wakame tomato. Dandellion cucumber earthnut pea peanut soko zuchini.</p>
+                        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbafe asparagus winter purslane kale. Celery potato scallion desert raisin horseraidsh spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="blog__social">
+                    <p><span>TAGS:</span> Recipes, Chicken, Pineapple, Mexican</p>
+                    <p><span>SHARE: </span>&emsp;   
+                        <a href="#" class="footer__social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social"><i class="fab fa-instagram"></i></a></p>
+                </div>
+                <hr>
+                <div class="blog__person">
+                    <img src="./assets/blog/blog-2.jpeg" alt="picture of Sally Lucas">
+                    <div class="blog__quote">
+                        <h4>SALLY LUCAS</h4>
+                        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbafe asparagus winter purslane kale. Celery potato scallion desert raisin horseraidsh spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi.</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="blog__related">RELATED POSTS</h4>
+                <div class="blog__links">
+                    <div class="blog__articles">
+                        <div class="blog__first">
+                            <img src="./assets/blog/blog-3.jpeg" alt="Picture of a pink cake">
+                            <h3>HOW TO BAKE THE PERFECT CAKE</h3>
+                            <p>July 11,2018 | by <span class="blog__darken">Admin</span> | in <span class="blog__darken">Recipes</span></p>
+                        </div>
+                        <div class="blog__second">
+                            <img src="./assets/blog/blog-4.jpeg" alt="Three cupcakes">
+                            <h3>FLORAL CUPCAKES</h3>
+                            <p>July 11,2018 | by <span class="blog__darken">Admin</span> | in <span class="blog__darken">Recipes</span></p>
+                        </div>
+                        <div class="blog__third">
+                            <img src="./assets/blog/blog-5.jpeg" alt="Food presentation">
+                            <h3>SINGLE POST WITH IMAGE</h3>
+                            <p>July 11,2018 | by <span class="blog__darken">Admin</span> | in <span class="blog__darken">Recipes</span></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h4>02 COMMENTS</h4>
+                <div class="blog__comments">
+                    <div class="blog__lucatony">
+                        <img src="./assets/blog/blog-6.jpeg" alt="picture of lucatony avaro">
+                        <div class="blog__commented">
+                            <p><span class="blog__name">Lucatony Avaro</span>-Web Developer</p>
+                            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens norl. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                            <p><span>Jul 17,2018 at 15 hours ago</span></p>
+                        </div>
+                    </div>
+                    <div class="blog__brian">
+                        <img src="./assets/blog/blog-7.jpeg" alt="picture of lucatony Brian">
+                        <div class="blog__commented">
+                            <p><span class="blog__name">Lucatony Avaro</span>-Web Developer</p>
+                            <p>
+                            <p>Pea horseradish azuki bean lettuce avocado asparagus.Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. </p>
+                            <p><span>Jul 17,2018 at 15 hours ago</span></p>
+                        </div>
+                    </div>
+                    <div class="blog__address">
+                        <h4>LEAVE COMMENT</h4>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form class="blog__form" action="">
+                            <ul class="blog__user">
+                                <li><input class="blog__input1" type="text" name="name" placeholder="Name*" required></li>
+                                <li><input class="blog__input2" type="text" name="email" placeholder="Email*" required></li>
+                                <li><input class="blog__input3" type="text" name="subject" placeholder="Your Website"></li>
+                            </ul>
+                            <textarea id="message" class="blog__message" name="message" placeholder="Comment"></textarea>
+                            <input class="blog__submit" type="submit" value="SUBMIT COMMENT">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer -->
+    <footer class="footer">
+        <!--footer wrapper -->
+        <div class="footer__wrapper">
+            <div class="footer__container">
+                <ul class="footer__address">
+                    <li class="footer__heading footer--highlight">DELICIOUS</li>
+                    <li class="footer__item">Soko radicchio bunya nuts gram dulse silver best parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</li>
+                    <hr>
+                    <li class="footer__item">A delicious restaurant</li>
+                    <li class="footer__item">Toronto, Ontario</li>
+                    <hr>
+                    <li class="footer__item">yum@food.com</li>
+                    <hr>
+                    <li class="footer__item">+1 234 567 8910</li>
+                </ul>
+                <ul class="footer__blog">
+                    <li class="footer__heading footer--recent">RECENT POSTS</li>
+                    <li class="footer__item""><a href="#">Beetroot water spinach okra water</a></li>
+                    <hr>
+                    <li class="footer__item""><a href="#">Chestnut ricebean pea catsear courgette</a></li>
+                    <hr>
+                    <li class="footer__item""><a href="#">Summer purslane spinach arugula pea</a></li>
+                    <hr>
+                    <li class="footer__item""><a href="#">Tatsol aubergine spring onion bush</a></li>
+                    <hr>
+                    <li class="footer__item""><a href="#">Tomato kale radicchio turnip chicory</a></li>
+                    <hr>
+                    <li class="footer__item""><a href="#">Salsify pea sprouts fava bean</a></li>
+                </ul>
+                <div class="footer__email">
+                    <h4 class="footer__heading footer--subscribe">SUBSCRIBE NOW</h4>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <form class="footer__form" action="#" method="#">
+                        <input class="footer__user" type="text" placeholder="Enter your email">
+                        <button class="footer__btn">&#8594;</button>
+                    </form>
+                    <hr>
+                    <a href="#" class="footer__social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-instagram"></i></a>
+                </div> 
+            </div>    
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright &copy; 2015 by <span class="copyright__highlight">POLAR</span>. All Rights Reserved </p>
+    </div>
 </body>
 </html>

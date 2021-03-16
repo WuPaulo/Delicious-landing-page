@@ -1,0 +1,295 @@
+@import "./variables";
+@import "./mixins";
+
+.header{
+
+    &__blog{
+        background-image: url("../assets/blog/blog-1.jpeg");
+        height:60vh;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
+}
+
+.blog{
+
+    margin: 150px 0;
+
+    hr{
+        background-color:$primary__1;
+        border: none;
+        height: 1px;
+    }
+
+    &__wrapper{
+        max-width:1500px;
+        width:60%;
+        margin:0 auto;
+    }
+    
+    p{
+        @include font__body;
+        color:$primary__2 ;
+    }
+
+    &__social{
+
+        a{
+            color: black;
+        }
+    }
+    
+    &__title{
+
+        h2{
+            @include font__headings(36px,44px,0.5px);
+        }
+    }
+
+    &__paragraphs{
+
+
+        p{
+            margin: 20px 0;
+        }
+    }
+
+    &__social{
+        margin: 20px 0;
+
+        span{
+            @include font__headings(14px,24px,0.3px);
+        }
+        p{
+            margin: 10px 0;
+        }
+        a{
+            color: $primary__1;
+        }
+    }
+
+    &__person{
+        margin: 50px 0px;
+        display:flex;
+        @include font__body;
+
+        img{
+            max-width: 100%;
+            display: block;
+            height: 350px;
+        }
+    }
+
+    &__quote{
+        background: $primary__3;
+        padding:40px;
+        margin-left:30px ;
+
+        h4{
+            @include font__headings(14px,24px,0.3px);
+            margin-bottom: 15px;
+        }
+    }
+
+    &__related{
+        @include font__headings(14px,24px,0.3px);
+        margin: 30px 0;
+    }
+
+
+    &__articles{
+        display:flex;
+
+        h3{
+            @include font__headings(18px,24px,0.3px);
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        
+    }
+
+    &__first{
+        width: calc(100%  / 3);
+        margin: 0px 30px 30px 0 ;
+
+        img{
+            margin-bottom: 30px;
+        }
+
+        span{
+            color: black;
+        }
+    }
+
+    &__second{
+        width: calc(100% / 3);
+        margin: 0px 30px 30px 0 ;
+
+        img{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__third{
+        width: calc(100% /3);
+
+
+        img{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__darken{
+        font-weight: bold;
+    }
+    
+    h4{
+        @include font__headings(14px,24px,0.3px);
+        margin: 30px 0;
+    }
+
+
+    &__comments{
+
+        img{
+            display: block;
+            width: 100%;
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+
+    &__lucatony{
+        display: flex;
+        margin: 25px 0;
+    }
+
+    &__brian{
+        display:flex;
+        margin: 25px 0;
+    }
+
+    &__commented{
+        background: $primary__3;
+        padding: 20px;
+        margin-left: 30px;
+
+        span{
+            font-weight: bold;
+            font-size: 10px;
+        }
+    }
+
+    &__name{
+        @include font__headings(14px,24px,0.3px);
+    }
+
+    &__address{
+
+        h4{
+            margin-bottom: 0;
+        }
+    }
+
+
+
+    &__user{
+        display: flex;
+        width: 100%;
+        list-style-type: none;
+
+        li{
+            width: 900%;
+        }
+        input[type=text] {
+            background: none;
+            border: 1px $primary__1 solid;
+            padding: 10px;
+            @include font__footer;
+            width: 100%;
+            
+        }
+    }
+
+    &__submit{
+        color: #F6F6F6;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+        background:$secondary__1;
+        padding:10px 20px;
+        @include font__headings(10px,26px,0.3px);
+    }
+
+    &__message{
+        height: 200px;
+        resize: none;
+        width: 100%;
+        font-size: 14px ;
+        @include font__footer;
+        padding:10px;
+        border: 1px $primary__1 solid;
+    }
+
+    &__user{
+        li {
+        width: 100%;
+        margin-right: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 940px) {
+
+    .blog__person {
+        flex-direction: column;
+    }
+
+    .blog__quote {
+        margin: 0;
+    }
+
+    .blog__person img {
+        width: 350px;
+        height: auto;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .blog__articles h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .blog p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .blog__wrapper {
+        max-width: 1500px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .blog__wrapper {
+        width: 90%;
+    }
+    
+
+    .blog {
+        margin: 60px 0;
+    }
+
+}
