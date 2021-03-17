@@ -333,6 +333,16 @@ header {
   display: none;
 }
 
+.header__link a:hover {
+  color: #64A604;
+  border-bottom: 1px solid #64A604;
+}
+
+.header__link a:focus {
+  color: #64A604;
+  border-bottom: 1px solid #64A604;
+}
+
 @media (max-width: 1300px) {
   header {
     height: 70vh;
@@ -371,7 +381,7 @@ header {
     display: none;
   }
   .header__list {
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -401,8 +411,8 @@ header {
     right: 2%;
     top: 1%;
   }
-  .header__toggle:checked + .header__list {
-    display: none;
+  .header__toggle:hover + .header__list {
+    display: block;
   }
 }
 
@@ -527,6 +537,20 @@ hr {
   font-size: 15px;
   color: #FFFFFF;
   margin-right: 15px;
+}
+
+.footer__btn:hover {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+
+.footer__btn:focus {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
 }
 
 form {
@@ -837,6 +861,7 @@ input[type="text"] {
   background: #F6F6F6;
   padding: 20px;
   margin-left: 30px;
+  position: relative;
 }
 
 .blog__commented span {
@@ -909,6 +934,47 @@ input[type="text"] {
 .blog__user li {
   width: 100%;
   margin-right: 10px;
+}
+
+.blog__submit {
+  color: #F6F6F6;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  background: #64A604;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  font-size: 10px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+}
+
+.blog__commented::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 15px 8px 0;
+  border-color: transparent #F6F6F6 transparent transparent;
+  border-style: solid;
+  position: absolute;
+  top: 8px;
+  left: -13px;
+}
+
+.blog__submit:hover {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+
+.blog__submit:focus {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
 }
 
 @media (max-width: 940px) {
@@ -1085,6 +1151,20 @@ input[type="text"] {
   margin-right: 30px;
 }
 
+.content__btn:hover {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+
+.content__btn:focus {
+  border: 2px solid black;
+  color: #64A604;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,10 +1190,17 @@ input[type="text"] {
   height: auto;
 }
 
-.banner__sticker {
+.banner__circle {
   position: absolute;
-  top: -39%;
-  right: 32%;
+  width: 20%;
+  height: auto;
+  display: block;
+  bottom: 180px;
+  right: 308px;
+}
+
+.banner__sticker {
+  position: relative;
 }
 
 .banner__underline {
@@ -1453,6 +1540,20 @@ input[type="text"] {
   letter-spacing: 0.3px;
   color: #999999;
   margin-bottom: 15px;
+}
+
+.contact__submit:hover {
+  border: 2px solid black;
+  color: #F6F6F6;
+  background: #64A604;
+  cursor: pointer;
+}
+
+.contact__submit:focus {
+  border: 2px solid black;
+  color: #F6F6F6;
+  background: #64A604;
+  cursor: pointer;
 }
 
 .fruit img {

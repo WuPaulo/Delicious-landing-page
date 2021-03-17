@@ -81,9 +81,18 @@ header{
     &__toggle{
         display: none;
     }
-    
-}
 
+
+    &__link a:hover {
+        color: $secondary__1;
+        border-bottom: 1px solid $secondary__1;
+    }
+
+    &__link a:focus {
+        color: $secondary__1;
+        border-bottom: 1px solid $secondary__1;
+    }
+}
 
 
 
@@ -139,7 +148,7 @@ header{
     }
     
     .header__list {
-        display: block;
+        display: none;
         width: 100%;
         text-align: center;
         font-size: 18px;
@@ -151,7 +160,6 @@ header{
         
     }
 
-
     .header__nav {
         justify-content: space-between;
         flex-direction: column;
@@ -162,7 +170,6 @@ header{
         right: 45%;
     }
 
-
     .header__label{
         display: block;
         cursor: pointer;
@@ -172,10 +179,9 @@ header{
         top: 1%;
     }
 
-    .header__toggle:checked + .header__list {
-        display: none;
+    .header__toggle:hover + .header__list {
+        display: block;
     }
-    
 }
 
 

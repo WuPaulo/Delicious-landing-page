@@ -103,6 +103,19 @@
         }
     }
 
+    &__submit:hover{
+        border: 2px solid black;
+        color: $primary__3;
+        background:$secondary__1;
+        cursor: pointer;
+    }
+
+    &__submit:focus{
+        border: 2px solid black;
+        color: $primary__3;
+        background:$secondary__1;
+        cursor: pointer;
+    }
 }
 
 .fruit{

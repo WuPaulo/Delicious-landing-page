@@ -9,7 +9,6 @@
         background-repeat:no-repeat;
         background-size: cover;
     }
-
 }
 
 .blog{
@@ -178,6 +177,7 @@
         background: $primary__3;
         padding: 20px;
         margin-left: 30px;
+        position: relative;
 
         span{
             font-weight: bold;
@@ -241,6 +241,48 @@
         width: 100%;
         margin-right: 10px;
         }
+    }
+
+    &__submit {
+        color: #F6F6F6;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+        background: #64A604;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-family: Raleway, sans-serif;
+        font-size: 10px;
+        line-height: 26px;
+        letter-spacing: 0.3px;
+    }
+
+    &__commented::before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 15px 8px 0;
+        border-color: transparent $primary__3 transparent transparent;
+        border-style: solid;
+        position: absolute;
+        top: 8px;
+        left: -13px;
+    }
+    
+
+    &__submit:hover{
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
+    }
+
+    &__submit:focus{
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
     }
 
 }

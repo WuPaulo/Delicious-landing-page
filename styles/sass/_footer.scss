@@ -90,6 +90,21 @@ hr {
         color: #FFFFFF;
         margin-right: 15px;
     }
+
+
+    &__btn:hover{
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
+    }
+
+    &__btn:focus{
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
+    }
 }
 
 form{

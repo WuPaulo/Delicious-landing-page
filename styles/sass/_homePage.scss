@@ -82,9 +82,8 @@
         width: 80%;
         margin: 0 auto;
         list-style-type: none;
-
-
     }
+
     &__list{
         display: flex;
         width: calc(50% - 30px);
@@ -106,7 +105,23 @@
         }
     }
 
+    &__btn:hover {
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
+    }
+
+    &__btn:focus{
+        border: 2px solid black;
+        color: $secondary__1;
+        background:$primary__3;
+        cursor: pointer;
+    }
+
+
 }
+
 
 .banner{
     display: flex;
@@ -124,11 +139,20 @@
             height: auto;
         }
     }
+    &__circle{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        display: block;
+        bottom: 180px;
+        right: 308px;
+    
+    }
 
     &__sticker{
-        position: absolute;
-        top: -39%;
-        right:32%;
+        position: relative;
+
+
     }
 
     &__underline{
