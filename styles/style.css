@@ -1402,6 +1402,9 @@ input[type="text"] {
   .banner__text {
     width: 80%;
   }
+  .banner__sticker {
+    left: 13px;
+  }
 }
 
 @media (max-width: 480px) {

@@ -332,6 +332,11 @@
     .banner__text {
         width: 80%;
     }
+
+    .banner__sticker {
+        left: 13px;
+
+    }
 }
 
 @media (max-width: 480px) {
@@ -360,5 +365,6 @@
         width: 80%;
         margin: 100px auto;
     }
+
 }
 
