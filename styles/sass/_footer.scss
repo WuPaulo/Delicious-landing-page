@@ -8,7 +8,7 @@ hr {
     height: 1px;
 }
 
-.footer{
+.footer {
     color:#999999;
     background: #2E2E2E;
     display: flex;
@@ -17,7 +17,7 @@ hr {
     position: relative;
     
     
-    &--highlight{
+    &--highlight {
         color:$secondary__1 ;
         @include font__headings(36px,44px,0.5px);
         
@@ -31,52 +31,52 @@ hr {
         @include font__footer;
     }
 
-    &__container{
+    &__container {
         display: flex;
         margin: 100px 0;
     }
 
-    &__address{
+    &__address {
         width: calc(100% / 3 - 90px);
         list-style-type: none;
         margin:0 90px;
     }
 
-    &__divider{
+    &__divider {
         background-color:$primary__1;
     }
 
-    &__blog{
+    &__blog {
         width: calc(100% / 3 - 90px) ;
         list-style-type: none;
         margin:0 45px;
 
     }
 
-    &__item{
+    &__item {
         margin: 10px 0;
-        a{
+        a {
             text-decoration: none;
             color:$primary__1;
         }
     }
 
-    &--recent{
+    &--recent {
         @include font__headings(18px,44px,0.5px);
         color: $primary__3;
     }
 
-    &__email{
+    &__email {
         width: calc(100% / 3 - 90px);
         margin:0 50px;
     }
 
-    &--subscribe{
+    &--subscribe {
         @include font__headings(18px,44px,0.5px);
         color: $primary__3;
     }
 
-    &__btn{
+    &__btn {
         background:$secondary__1;
         padding: 15px;
         border: none;
@@ -85,21 +85,21 @@ hr {
         color: #FFFFFF;
     }
 
-    &__social{
+    &__social {
         font-size: 15px;
         color: #FFFFFF;
         margin-right: 15px;
     }
 
 
-    &__btn:hover{
+    &__btn:hover {
         border: 2px solid black;
         color: $secondary__1;
         background:$primary__3;
         cursor: pointer;
     }
 
-    &__btn:focus{
+    &__btn:focus {
         border: 2px solid black;
         color: $secondary__1;
         background:$primary__3;
@@ -107,11 +107,11 @@ hr {
     }
 }
 
-form{
+form {
     font-size: 0;
 }
 
-input[type="text"]{
+input[type="text"] {
     display:inline-block;
     margin:20px 0px;
     padding: 15px;
@@ -123,32 +123,32 @@ input[type="text"]{
     font-style: italic;
     }
 
-.copyright{
+.copyright {
     background: #252525;
     width: 100%;
     position: absolute;
     @include font__footer;
     color:$primary__1;
 
-    p{
+    p {
         padding-top: 20px;
         max-width:2000px;
         width:59%;
         margin: 20px auto;
     }
 
-    &__highlight{
+    &__highlight {
         color: $secondary__1;
     }
 }
 
-@media(max-width: 1300px){
+@media(max-width: 1300px) {
     .footer__wrapper {
         width: 80%;
     }
 }
 
-@media(max-width: 1222px){
+@media(max-width: 1222px) {
 
     input[type="text"] {
         width: 60%;
@@ -160,7 +160,7 @@ input[type="text"]{
 
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1100px) {
     .footer__wrapper {
         width: auto;
     }

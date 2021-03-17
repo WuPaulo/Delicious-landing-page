@@ -1,6 +1,6 @@
 @import "./variables";
 
-@mixin font__headings($sizeValue,$sizeHeight,$sizeSpacing){
+@mixin font__headings($sizeValue,$sizeHeight,$sizeSpacing) {
     font-weight: bold;
     font-family: Raleway, sans-serif;
     font-size: $sizeValue;
@@ -8,14 +8,14 @@
     letter-spacing: $sizeSpacing;
 }
 
-@mixin font__footer(){
+@mixin font__footer() {
     font-size:13px;
     font-family: 'Lora', serif;
     line-height: 30px;
     letter-spacing: 0.3px;
 }
 
-@mixin font__body(){
+@mixin font__body() {
     font-size:14px;
     font-family: 'Lora', serif;
     line-height: 24px;

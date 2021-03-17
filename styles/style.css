@@ -978,6 +978,9 @@ input[type="text"] {
 }
 
 @media (max-width: 940px) {
+  .blog__wrapper {
+    width: 80%;
+  }
   .blog__person {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1005,10 +1008,22 @@ input[type="text"] {
 }
 
 @media (max-width: 768px) {
-  .blog__wrapper {
-    max-width: 1500px;
-    width: 80%;
-    margin: 0 auto;
+  .blog__articles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog__first {
+    width: 100%;
+    margin: 0;
+  }
+  .blog__second {
+    width: 100%;
+    margin: 0;
+  }
+  .blog__third {
+    width: 100%;
   }
 }
 
@@ -1177,30 +1192,19 @@ input[type="text"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 150px auto;
+  margin-bottom: 150px;
 }
 
 .banner__images {
+  margin-top: 150px;
   position: relative;
-  max-width: 100%;
-}
-
-.banner__images img {
-  max-width: 100%;
-  height: auto;
-}
-
-.banner__circle {
-  position: absolute;
-  width: 20%;
-  height: auto;
-  display: block;
-  bottom: 180px;
-  right: 308px;
 }
 
 .banner__sticker {
-  position: relative;
+  position: absolute;
+  top: -110px;
+  left: 237px;
+  width: 100%;
 }
 
 .banner__underline {
@@ -1608,16 +1612,16 @@ input.contact__subject {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact__first {
-    width: 80%;
-    margin: 50px 45px;
-  }
   .contact__holder {
     width: 100%;
   }
   .contact__second {
     width: 80%;
     margin: 50px 45px;
+  }
+  .contact__first {
+    width: 90%;
+    margin: 50px auto;
   }
 }
 
