@@ -1200,6 +1200,14 @@ input[type="text"] {
   position: relative;
 }
 
+.banner__chairs {
+  max-width: 100%;
+}
+
+.banner__circle {
+  max-width: 100%;
+}
+
 .banner__sticker {
   position: absolute;
   top: -110px;

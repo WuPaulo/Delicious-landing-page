@@ -135,7 +135,13 @@
         position: relative;
     }
 
+    &__chairs{
+        max-width: 100%;
+    }
 
+    &__circle{
+        max-width: 100%;
+    }
 
     &__sticker {
         position: absolute;
