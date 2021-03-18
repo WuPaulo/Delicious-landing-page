@@ -146,8 +146,8 @@
     &__sticker {
         position: absolute;
         top: -110px;
-        left: 237px;
-        width: 100%;
+        right: 117px;
+        width: 50%;
     }
 
     &__underline {
@@ -329,15 +329,6 @@
         margin: 125px auto;
     }
 
-    .banner__text {
-        width: 80%;
-    }
-
-    .banner__sticker {
-        left: 13px;
-        width: 90%;
-
-    }
 }
 
 @media (max-width: 480px) {
