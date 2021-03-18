@@ -1,5 +1,7 @@
 # Paulo__Wu__Project_One
 
+[Live Link](https://wupaulo.github.io/Paulo__Wu__Project_One/)
+
 1.NAMING CONVENTION BEM (Block-Element-Modifier) 
 
 BEM will be used for HTML, CSS, and SCSS:
