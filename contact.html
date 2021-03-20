@@ -19,12 +19,10 @@
         <div class= "header__wrapper">
             <!-- navigation bar -->
             <nav class="header__nav">
-
+                <div class="header__hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
                 <h1>DELICIOUS</h1>
-                
-                <label class="header__label" for="header__toggle">&#9776;</label>
-                <input class="header__toggle" type="checkbox" id="header__toggle" />
-
                 <ul class="header__list">
                     <li class="header__link header--highlight" ><a href="./index.html">HOME</a></li>
                     <li class="header__link"><a href="#">ABOUT</a></li>
@@ -44,6 +42,19 @@
             </nav>
         </div>
     </header>
+
+    <nav class="mobile">
+        <a href="./index.html">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">RECIPES</a>
+        <a href="#">NUTRITION</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="#">SHOP</a></li>
+        <a href="./contact.html">CONTACT</a>
+        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <div class="mobile__circle">2</div>
+	</nav>
     <!--section starts here -->
     <section class="contact">
             <div class="contact__container">
@@ -137,5 +148,7 @@
     <div class="copyright">
         <p>Copyright &copy; 2015 by <span class="copyright__highlight">POLAR</span>. All Rights Reserved </p>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
