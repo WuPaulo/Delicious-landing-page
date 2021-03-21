@@ -182,6 +182,59 @@
             width: calc(100% /3);
         }
     } 
+
+    &__slider{
+        width: 85%;
+        margin: 50px auto;
+        overflow: hidden;
+        display: none;
+        position: relative;
+        border: 5px solid $primary__2;
+
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__carousel{
+        display: flex;
+        width: 100%;
+        height: auto;
+
+    }
+
+    &__next{
+        display: none;
+        position: absolute;
+        right:0;
+        top: 50%;
+        font-size: 42px;
+        color: $secondary__1;
+        background:none;
+        border: none;
+    }
+
+    &__prev{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-size: 42px;
+        color: $secondary__1;
+        background:none;
+        border: none;
+    }
+    
+    &__next :hover ,
+    &__next :focus ,
+    &__prev :hover , 
+    &__prev :focus {
+        cursor: pointer;
+        background-color:$primary__2;
+    }
+
 }
 
 
@@ -327,6 +380,22 @@
 
     .banner{
         margin: 125px auto;
+    }
+
+    .gallery__picture{
+        display: none;
+    }
+
+    .gallery__slider{
+        display: block;
+    }
+
+    .gallery__next{
+        display: block;
+    }
+
+    .gallery__prev{
+        display: block;
     }
 
 }
