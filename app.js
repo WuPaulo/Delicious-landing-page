@@ -3,7 +3,7 @@ const mobile = document.querySelector('.mobile');
 const formElement = document.querySelector('form');
 
 //toggle hamburger menu animation for nav links
-burger.addEventListener('click', function () {
+burger.addEventListener('click', function (e) {
     mobile.classList.toggle('active');
 });
 
