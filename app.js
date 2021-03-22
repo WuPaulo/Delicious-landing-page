@@ -36,7 +36,7 @@ slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //button listeners to add onto counter and switch to next image
 nextBtn.addEventListener('click' , function(e){
     if(counter >= images.length -1) return;
-    slide.style.transition = "transform 0.4s ease-in-out ";
+    slide.style.transition = "transform 0.3s ease-in-out ";
     counter++;
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     size = images[0].clientWidth;
@@ -44,7 +44,7 @@ nextBtn.addEventListener('click' , function(e){
 
 prevBtn.addEventListener('click' , function(e){
     if(counter <= 0) return;
-    slide.style.transition = "transform 0.4s ease-in-out";
+    slide.style.transition = "transform 0.3s ease-in-out";
     counter--;
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     size = images[0].clientWidth;
