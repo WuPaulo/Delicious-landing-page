@@ -2,17 +2,19 @@
 @import "./mixins";
 
 
-header{
+header {
     background-image: url("../assets/home/home-1.jpeg");
     height:100vh;
     background-repeat:no-repeat;
     background-size: cover;
     color: #000000;
     background-position: 50%;
+    position: relative;
+
 }
 
 .header{
-
+    
     &__wrapper {
         max-width:2000px;
         width:95%;
@@ -20,7 +22,7 @@ header{
     }
 
 
-    &__number{
+    &__number {
         text-align: center;
         background-color:$secondary__1;
         position: absolute;
@@ -40,7 +42,7 @@ header{
         display: flex;
         justify-content: space-between;
 
-        h1{
+        h1 {
             @include font__headings(46px,24px,0.6px)
         }
     }
@@ -65,21 +67,25 @@ header{
         color: $secondary__1;
     }
 
-    &--bag{
+    &--bag {
         position: relative;
     }
 
-    &__bar{
-        text-align: right;
+    &__hamburger {
+        display: none;
+        cursor: pointer;
+        font-size: 36px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        padding: 10px;
     }
 
-    &__label{
-        font-size: 24px;
-        display: none;
-    }
-    
-    &__toggle{
-        display: none;
+    &__hamburger:hover , &__hamburger:focus{
+        background:#d1cfcfbf;
+        width:50px; 
+        height:50px;
+        border-radius: 50%;
     }
 
 
@@ -94,17 +100,65 @@ header{
     }
 }
 
+.mobile {
+    position:absolute;
+	top: 10%;
+	left: 100%;
+	width: 100%;
+	min-height: 50%;
+	background-color: #f1f1f1bf;;
+	transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 
-@media(max-width: 1300px){
+    &__circle{
+        position: absolute;
+        top: 84%;
+        right: 50%;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        background:$secondary__1;
+        @include font__headings(14px,22px,0.3px)
+    }
+}
+
+
+.mobile.active {
+	left: 0;
+}
+
+.mobile a {
+    display: block;
+	width: 30%;
+    text-decoration: none;
+	margin: 5px auto;
+	text-align: center;
+	padding: 10px 15px;
+    color: $primary__2;
+    @include font__headings(18px,20px,0.3px);
+    border-bottom:2px solid transparent;
+}
+                        
+.mobile a:hover , .mobile a:focus {
+    color: $secondary__1;
+    border-bottom: 2px solid $secondary__1;
+}
+
+
+
+@media(max-width: 1300px) {
     
-    header{
+    header {
         height: 70vh;
     }
 }
 
 
-@media(max-width: 1100px){
+@media(max-width: 1100px) {
 
     .header__list {
         font-size: 15px;
@@ -131,69 +185,58 @@ header{
 
 @media (max-width: 940px) {
 
-    header{
+    header {
         height: 60vh;
     }
 }
 
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+}
 
 @media (max-width: 768px) {
 
-    .header__nav h1 {
-        text-align: center;
+    .header__nav {
+        justify-content: center;
     }
 
-    .header__toggle{
-        display: none;
-    }
-    
     .header__list {
         display: none;
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-        background-color: #f1f1f1bf;
     }
 
-    .header__list li a{
-        display: block;
-        
-    }
-
-    .header__nav {
-        justify-content: space-between;
-        flex-direction: column;
-    }
 
     .header__number {
         bottom: -7px;
         right: 45%;
     }
 
-    .header__label{
+    .header__hamburger {
         display: block;
-        cursor: pointer;
-        position: absolute;
-        font-size: 52px;
-        right: 2%;
-        top: 1%;
     }
 
-    .header__toggle:hover + .header__list {
-        display: block;
-    }
 }
 
 
 @media (max-width: 480px) {
 
-    .header__wrapper{
+    .header__wrapper {
         width:100%;
     }
 
-    header{
+    header {
         height: 50vh;    
     }   
+
+
+    .mobile a {
+        padding: 5px 10px;
+    }
+
+    .mobile {
+        min-height: 40%;
+    }
 }
 
 

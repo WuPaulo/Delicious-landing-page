@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
-    <title>Delicious_Home</title>
+    <title>Delicious</title>
 </head>
 <body>
     <!--Header-->
@@ -19,42 +19,40 @@
         <div class= "header__wrapper">
             <!-- navigation bar -->
             <nav class="header__nav">
+                <div class="header__hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
                 <h1>DELICIOUS</h1>
-                <label class="header__label" for="header__toggle">&#9776;</label>
-                <input class="header__toggle" type="checkbox" id="header__toggle" />
                 <ul class="header__list">
-                    <li class="header__link header--highlight" >
-                        <a href="#">HOME</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="#">ABOUT</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="#">RECIPES</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="#">NUTRITION</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="./blog.html">BLOG</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="#">SHOP</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="./contact.html">CONTACT</a>
-                    </li>
+                    <li class="header__link header--highlight" ><a href="./index.html">HOME</a></li>
+                    <li class="header__link"><a href="#">ABOUT</a></li>
+                    <li class="header__link"><a href="#">RECIPES</a></li>
+                    <li class="header__link"><a href="#">NUTRITION</a></li>
+                    <li class="header__link"><a href="./blog.html">BLOG</a></li>
+                    <li class="header__link"><a href="#">SHOP</a></li>
+                    <li class="header__link"><a href="./contact.html">CONTACT</a></li>
                     <li class="header__link header--bag">
                         <a href="#"><i class="fas fa-shopping-bag"></i></a>
                 
                     </li>
-                    <li class="header__link header--search">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
+                    <li class="header__link header--search"><a href="#"><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <nav class="mobile">
+        <a href="./index.html">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">RECIPES</a>
+        <a href="#">NUTRITION</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="#">SHOP</a></li>
+        <a href="./contact.html">CONTACT</a>
+        <a href="#" class="mobile__bag"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <div class="mobile__circle">2</div>
+	</nav>
 
     <!--main-->
     <main>
@@ -66,6 +64,7 @@
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parship. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
                     <button type="button" class="content__btn">VIEW RECIPES</button>
                 </div>
+
                 <div class="content__salad ">
                     <img src="./assets/home/home-2.jpeg" alt="salad in a bowl">
                 </div>
@@ -75,6 +74,7 @@
                 <div class="content__tacos ">
                     <img src="./assets/home/home-3.jpeg" alt="tacos with lime">
                 </div>
+
                 <div class="content__menu">
                     <ul class="content__container">
                         <li class="content__list">
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </section>
-
+        <!--section two -->
         <section class="banner">
             <div class="banner__images">
                 <img class="banner__chairs" src="./assets/home/home-4.jpeg" alt="Balcony chairs with table">
@@ -136,7 +136,7 @@
                 <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zuchini</p>
             </div>
         </section>
-
+        <!--section three -->
         <section class="gallery">
             <div class="gallery__picture">
                 <img src="./assets/home/home-5.jpeg" alt="Plate of food">
@@ -146,8 +146,22 @@
                 <img src="./assets/home/home-9.jpeg" alt="Blueberry muffin">
                 <img src="./assets/home/home-10.jpeg" alt="Food in a plate">
             </div>
+            <div class="gallery__slider">
+                <div class="gallery__carousel">
+                    <img src="./assets/home/home-10.jpeg" alt="Food in a plate" id="lastClone">
+                    <img src="./assets/home/home-5.jpeg" alt="Plate of food" id="first">
+                    <img src="./assets/home/home-6.jpeg" alt="Burger on a plate" id="second">
+                    <img src="./assets/home/home-7.jpeg" alt="Red onions" id="third">
+                    <img src="./assets/home/home-8.jpeg" alt="Cake" id="fourth">
+                    <img src="./assets/home/home-9.jpeg" alt="Blueberry muffin" id="fifth">
+                    <img src="./assets/home/home-10.jpeg" alt="Food in a plate" id="sixth">
+                    <img src="./assets/home/home-5.jpeg" alt="Plate of food" id="firstClone">
+                </div>
+                <button class="gallery__prev" id="prevBtn"><i class="fas fa-less-than"></i></button>
+                <button class="gallery__next" id="nextBtn"><i class="fas fa-greater-than"></i></button>
+            </div>
         </section>
-
+        <!--section four -->
         <section class="review">
             <div class="review__container">
                 <h2>HUNG<span>RY CL</span>IENTS</h2>
@@ -207,8 +221,10 @@
             </div>    
         </div>
     </footer>
+    <!--copyright -->
     <div class="copyright">
         <p>Copyright &copy; 2015 by <span class="copyright__highlight">POLAR</span>. All Rights Reserved </p>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
