@@ -1326,7 +1326,7 @@ input[type="text"] {
   right: 10px;
   top: 50%;
   font-size: 42px;
-  color: #64a604;
+  color: black;
   background: none;
   border: none;
 }
@@ -1337,7 +1337,7 @@ input[type="text"] {
   left: 10px;
   top: 50%;
   font-size: 42px;
-  color: #64a604;
+  color: black;
   background: none;
   border: none;
 }
